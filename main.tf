@@ -10,5 +10,5 @@ data "azurerm_resource_group" "rg" {
 
 data "azurerm_storage_account" "saccount" {
   name                 = "sa${var.project}${var.environment}"
-  resource_group_name  = data.azurerm_resource_group.rg.name  # Aquí se agrega el nombre del grupo de recursos
+  resource_group_name  = data.azurerm_resource_group.rg.name
 }

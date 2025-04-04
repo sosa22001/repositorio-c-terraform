@@ -27,7 +27,6 @@ resource "azurerm_mssql_database" "db" {
 }
 
 //Base de datos de caché:
-# NOTE: the Name used for Redis needs to be globally unique
 resource "azurerm_redis_cache" "db-cache" {
   name                 = "db-redis-${var.project}"
   location             = var.location
